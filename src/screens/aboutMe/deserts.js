@@ -1,0 +1,37 @@
+const deserts =[
+    {
+        name: "Coding",
+        family: "Coding",
+        mainCateg: "Coding",
+        style: "Coding",
+        costPrice: "Coding",
+        sellingPrice: "Coding",
+        profit: "Coding",
+        targetAudience: "Coding",
+        generalTaste: "Coding",
+        generalColor: "Coding",
+        generalShape: "Coding",
+        temperature: "Coding",
+        prepTime: "Coding",
+        timeOfDayToServe: "Coding",
+        expiryDateCount: "Coding",
+        sweetnessLevel: "Coding",
+        servingPiece: "Coding",
+        dineType: "Coding",
+        menuType: "Coding",
+        familiarity: "Coding",
+        madeIn: "Coding",
+        mainFlavor: "Coding",
+        secondMainFlavor: "Coding",
+        thirdMainFlavor: "Coding",
+        aroma: "Coding",
+        aftertaste: "Coding",
+        mainTexture: "Coding",
+        secondMainTexture: "Coding",
+        thirdMainTexture: "Coding",
+        DominantFlavor: "Coding",
+
+        },
+    
+]
+export default deserts;

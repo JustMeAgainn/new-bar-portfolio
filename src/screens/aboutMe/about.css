@@ -1,0 +1,126 @@
+.about-container{
+    background-color: #ffffff;
+    height: 90%;
+    width: 97%;
+    padding: 0.5rem;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr ;
+    grid-template-rows:  0.3fr 1fr 1fr 1fr 1fr;
+    grid-gap: 0.5rem;
+    grid-template-areas:
+   "back about-slider-container about-slider-container about-slider-container about-slider-container"
+   " pan about-slider-container about-slider-container about-slider-container about-slider-container"
+   " pan about-slider-container about-slider-container about-slider-container about-slider-container"
+   " pan about-slider-container about-slider-container about-slider-container about-slider-container"
+   " pan about-slider-container about-slider-container about-slider-container about-slider-container";
+}
+.about-slider-container{
+    background: white;
+    grid-area:  about-slider-container;
+    height: 97%;
+    width: 98.5%;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 2fr 1fr;
+    padding: 0.5rem;
+}
+.about-back-btn{
+    background: #7f7f7f;
+    grid-area: back;
+    height: 80%;
+    width: 97%;
+    margin-top: 5%;
+    display: grid;
+    place-items: center;
+    opacity: 1;
+animation-name: fadeInOpacity3;
+animation-iteration-count: 1;
+animation-timing-function: ease-out;
+animation-duration: 0.3s;
+}
+.about-panning-image{
+    background-color: rgb(0, 0, 0);
+    grid-area: pan;
+    height: 98%;
+    width: 97%;
+    display: grid;
+    place-items: start center;
+    opacity: 1;
+    animation-name: fadeInOpacity2;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    animation-duration: 1s;
+}
+.about-panning-image h2{
+color: white;
+height: 90%;
+width: 90%;
+
+}
+.about-left{
+    height: 100%;
+    width: 100%;
+    background-color: #1b1a1a;
+    display: grid;
+    place-items: center;
+}
+.about-left-sub{
+    height: 100%;
+    width: 100%;
+    background-color: #aeaeae;
+    overflow: hidden;
+    position: relative;
+    border: solid white 1px;
+    opacity: 1;
+    animation-name: fadeInOpacity1;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    animation-duration: 0.3s;
+}
+
+.about-left-sub > div{
+    display: grid;
+    place-items: center;
+}
+.hobby-image{
+    height: 20px;
+    width: 50%;
+
+}
+.about-right{
+    height: 100%;
+    width: 97%;
+    background-color: #bfbfbf;
+    display: grid;
+    place-items: center;
+}
+.about-right-sub {
+    height: 100%;
+    width: 100%;
+background-color: #bfbfbf;
+display: grid;
+place-items: center;
+grid-template-columns: 1fr;
+position: relative;
+}
+.about-right-sub > div {
+    height: 100%;
+    width: 100%;
+    background-color:#000000;
+    position: absolute;
+    display: grid;
+place-items: center;
+border: solid white 1px;
+animation-name: fadeInOpacity1;
+animation-iteration-count: 1;
+animation-timing-function: ease-out;
+animation-duration: 0.7s;
+
+}
+.about-right-sub > div h2 {
+    overflow: hidden;
+    height: 90%;
+    width: 90%;
+background-color: 000000;
+color: white;
+}

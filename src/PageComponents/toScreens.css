@@ -1,0 +1,8 @@
+.to-screens{
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    background-color: rgb(72, 100, 142);
+    width: 97%;
+    height: 95%;
+}

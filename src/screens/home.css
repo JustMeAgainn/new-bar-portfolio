@@ -1,0 +1,102 @@
+.home-main{
+    background-color: #ffffff;
+    height: 95%;
+    width: 97%;
+    padding: 0.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 0.5rem;
+    grid-template-areas:
+    "nav nav nav nav"
+    "nav nav nav nav"
+    "side-1 side-1 long-1 long-2"
+    "side-2 side-2 long-1 long-2";
+}
+.nav {
+    background: #d2cdc9;
+    grid-area: nav;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    " . . home-big-text "
+    " . . home-big-text ";
+    animation-name: fadeInOpacity2;
+animation-iteration-count: 1;
+animation-timing-function: ease-out;
+animation-duration: 0.7s;
+  }
+.nav h1 {
+color: white; 
+font-size: 10vh;
+}
+.nav h2 {
+color: white;  
+font-size: 5vh;
+}
+.nav h3 {
+color: white;  
+font-size: 3vh;
+margin-left: 1%
+}
+
+.home-big-text{
+    grid-area: home-big-text;
+}
+.side-1 {
+    background: #7f7f7f;
+    grid-area: side-1;
+    opacity: 1;
+    animation-name: fadeInOpacity2;
+animation-iteration-count: 1;
+animation-timing-function: ease-out;
+animation-duration: 0.6s;
+}
+.side-1:hover {
+    background: #3d3d3d;
+}
+.side-1 h2 {
+color: black;
+}
+.side-2 {
+    background: #bfbfbf;
+    grid-area: side-2;
+    animation-name: fadeInOpacity2;
+animation-iteration-count: 1;
+animation-timing-function: ease-out;
+animation-duration: 1.1s;
+}
+.side-2:hover {
+    background: #373737;
+}
+.side-2 h2 {
+color: black;
+}
+.long-1 {
+    background: black;
+    grid-area: long-1;
+    animation-name: fadeInOpacity2;
+animation-iteration-count: 1;
+animation-timing-function: ease-out;
+animation-duration: 1.5s;
+}
+.long-1:hover {
+    background: rgb(37, 36, 36);
+}
+.long-1 h2 {
+color: white;
+
+}
+.long-2 {
+    background: #7f7f7f;
+    grid-area: long-2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    animation-name: fadeInOpacity1;
+animation-iteration-count: 1;
+animation-timing-function: ease-out;
+animation-duration: 0.3s;
+}

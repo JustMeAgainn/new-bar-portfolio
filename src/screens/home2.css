@@ -1,0 +1,66 @@
+@media only screen and (max-width: 550px) {
+    .home-main {
+      grid-template-columns: 1fr;
+      grid-template-rows: 0.2fr 0.4fr 0.4fr 0.4fr 0.4fr;
+      grid-template-areas:
+        "nav"
+        "side-1"
+        "side-2"
+        "long-1"
+        "long-2";
+    }
+    .nav {
+        background: #d2cdc9;
+        grid-area: nav;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav h1 {
+        color: white; 
+        font-size: 5vh;
+        margin-left: 100%
+    }
+    .nav h2 {
+        color: white;  
+        font-size: 3vh;
+        margin-left: 100%
+        }
+    .nav h3 {
+        color: white;  
+        font-size: 3vh;
+        margin-left: 100%
+        }
+  }
+  @keyframes fadeInOpacity1 {
+    0%{
+        opacity: 0;
+        height: 90%;
+    }
+    100%{
+        opacity: 1;
+        height: 100%;
+        }
+}
+@keyframes fadeInOpacity2 {
+    0%{
+        opacity: 0;
+        height: 0;
+    }
+    30%{
+        opacity: 0.3;
+        height: 100%;
+    }
+    60%{
+        opacity: 0.8;
+        height: 100%;
+    }
+    90%{
+        opacity: 0.9;
+        height: 100%;
+    }
+    100%{
+        opacity: 1;
+        height: 100%;
+    }
+}
